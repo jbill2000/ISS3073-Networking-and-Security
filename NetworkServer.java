@@ -47,17 +47,17 @@ public class NetworkServer {
                 }
             }while(check!=true);
 
-                switch (incoming) {
+                switch(incoming) {
                     case '+': {
-                        result = num1 + num2;
+                        result = (num1 + num2);
                         break;
                     }
                     case '-': {
-                        result = num2 - num1;
+                        result = (num1 - num2);
                         break;
                     }
                     case '*': {
-                        result = num1 * num2;
+                        result = (num1 * num2);
                         break;
                     }
                     case '/': {
@@ -65,7 +65,7 @@ public class NetworkServer {
                         break;
                     }
                 }
-                output.write(result);
+                output.writeInt(result);
                 System.out.println("The Result is "+result);
 
 

@@ -38,7 +38,8 @@ public class NetworkClient {
                 }
                 output.writeChars(operator);
                 //Now client will receive results from server
-                int result= input.read();
+
+               int result= input.readInt();
                 System.out.println("The Result is "+result);
 
 
